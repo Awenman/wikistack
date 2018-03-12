@@ -26,6 +26,6 @@ router.get('/wiki/add', function (req, res, next) {
 router.post('/wiki/add', (req, res, next) => {
     res.json(req.body)
     // const title = req.body.title;
-    // const text = req.body.text;
-    // res.render('index', {title: title, text: text})
+
+    // res.render('index', {title: title})
 })
