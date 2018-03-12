@@ -22,8 +22,9 @@ app.set('view engine', 'html');
 app.engine('html', nunjucks.render);
 
 app.use(bodyParser.urlencoded({extended: true}));
-
+app.use(bodyParser.json());
 app.use(express.static('views'));
+app.use(logger('dev'));
 
 
 /**
